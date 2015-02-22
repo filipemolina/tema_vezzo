@@ -8109,10 +8109,10 @@ a.quick-view:hover {background-color: #b15b5b;}
 
 /********************************************* Feadture Slider *********************************************/
 .pos-feature-product { clear: both; }
-.pos-feature-product-title {
-  background: url("../img/bg_featured.png") no-repeat #b15b5b ;
+.pos-feature-product-title 
+{
   text-transform: capitalize;
-  }
+}
 
 .price-box {padding: 0 0 20px 10px; }
 .comments_note {position: absolute; bottom:45px; right:10px;}
@@ -8170,17 +8170,22 @@ border:1px solid #2f2f2f; border-radius: 30px;
     bottom:-40px;
 }
 .pos-feature-product li.feature-productslider-item:hover .button-container {bottom:0;}
-.title_block {padding: 0 0 0 50px; }
+.title_block {/*padding: 0 0 0 50px; */}
 
 .pos-special-product {margin:0;}
 .pos-special-product .title_block {background: url(../img/bg_special.png) 0 no-repeat #b15b5b; margin: 0px 0 30px;}
-.title_block h4{
-  padding: 0 0 0 10px;
-  background: #f1f1f1;
+.title_block h4
+{
+  padding: 0 0 0 0;
+  background: #F9F9F9;
   line-height: 50px;
   font-size: 24px;
-  font-weight:normal;
-  margin:0;}
+  font-weight: bold;
+  margin: 0;
+  color: #7f213a;
+  border-bottom: 1px solid #7f213a;
+  text-transform: uppercase;
+}
 
 
 .actions .ajax_add_to_cart_button,.button.ajax_add_to_cart_button { border:none; font-weight:normal; text-transform: uppercase; float: left; background: url(../img/cart_icon.png) 0 0 no-repeat #ddd; padding:0 0 0 40px; line-height: 40px;}
