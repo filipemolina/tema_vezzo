@@ -1,5 +1,5 @@
 <div class="pos-feature-product">
-	<div class="pos-feature-product-title title_block"><h4>{l s='Featured Products' mod='posfeatureproduct'}</h4></div>
+	<div class="pos-feature-product-title title_block"><h4>{l s='Destaques' mod='posfeatureproduct'}</h4></div>
 	{if count($products)>1}
 		<ul class="bxslider">
 			{foreach from=$products item=product name=posFeatureProducts}
