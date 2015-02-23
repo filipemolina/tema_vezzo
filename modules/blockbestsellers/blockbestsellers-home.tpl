@@ -27,7 +27,6 @@
 {if isset($best_sellers) && $best_sellers}
 	{*include file="$tpl_dir./product-list.tpl" products=$best_sellers class='blockbestsellers tab-pane' id='blockbestsellers' active=$active_ul*}
 	<div class="pos-feature-product best-sellers-clone">
-	<div class="pos-feature-product-title title_block"><h4>{l s='Destaques' mod='posfeatureproduct'}</h4></div>
 	{if count($best_sellers)>1}
 		<ul class="bxslider">
 			{foreach from=$best_sellers item=product name=posFeatureProducts}
@@ -156,12 +155,12 @@
 	<script type="text/javascript">
 		  $('.best-sellers-clone .bxslider').bxSlider({
 			auto: 0,
-			slideWidth:{if $slideOptions.width_item != ''}{$slideOptions.width_item}{else}262{/if},
+			slideWidth:269,
 			slideMargin: 30,
 			autoHover: true,
 			infiniteLoop: false,
 			minSlides: {if $slideOptions.min_item != ''}{$slideOptions.min_item}{else}1{/if},
-			maxSlides: {if $slideOptions.max_item != ''}{$slideOptions.max_item}{else}3{/if},
+			maxSlides: 4,
 			speed:  {if $slideOptions.speed_slide != ''}{$slideOptions.speed_slide}{else}5000{/if},
 			pause: {if $slideOptions.a_speed != ''}{$slideOptions.a_speed}{else}1000{/if},
 			controls: {if $slideOptions.show_nexback != 0}{$slideOptions.show_nexback}{else}false{/if},

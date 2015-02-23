@@ -21,9 +21,12 @@ a.blockbestsellers
 	padding: 0 !important;
 }
 
-/*.best-sellers-clone .feature-productslider-item
+/*--------------------------------------------
+| Footer
+--------------------------------------------*/
+
+#footer .title_block h4
 {
-	float: left;
-	width: 269px;
-	margin-right: 30px;
-}*/
+	padding-left: 18px;
+	text-transform: capitalize;
+}

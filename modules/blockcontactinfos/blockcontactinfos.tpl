@@ -29,23 +29,9 @@
 	<div>
         <div class="title_block"><h4>{l s='Store Information' mod='blockcontactinfos'}</h4></div>
         <ul class="toggle-footer">
-            {if $blockcontactinfos_company != ''}
-            	<li>
-            		<i class="icon-map-marker"></i>{$blockcontactinfos_company|escape:'html':'UTF-8'}{if $blockcontactinfos_address != ''}, {$blockcontactinfos_address|escape:'html':'UTF-8'}{/if}
-            	</li>
-            {/if}
-            {if $blockcontactinfos_phone != ''}
-            	<li>
-            		<i class="icon-phone"></i>{l s='Call us now toll free:' mod='blockcontactinfos'} 
-            		<span>{$blockcontactinfos_phone|escape:'html':'UTF-8'}</span>
-            	</li>
-            {/if}
-            {if $blockcontactinfos_email != ''}
-            	<li>
-            		<i class="icon-envelope-alt"></i>{l s='Email:' mod='blockcontactinfos'} 
-            		<span>{mailto address=$blockcontactinfos_email|escape:'html':'UTF-8' encode="hex"}</span>
-            	</li>
-            {/if}
+            <li>Sobre Nós</li>
+            <li>Nossas Lojas</li>
+            <li>Trabalhe Conosco</li>
         </ul>
     </div>
 </section>

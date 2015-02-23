@@ -26,10 +26,10 @@
 <div id="newsletter_block_left" class="block col-sm-6 col-md-6 col-smb-12">
 	<div class="title_block"><h4>{l s='Newsletter' mod='blocknewsletter'}</h4></div>
 	<div class="block_content">
-		<p class="newletter-header">{l s='Enter your email' mod='blocknewsletter'}</p>
+		<p class="newletter-header">{l s='Digite seu E-mail' mod='blocknewsletter'}</p>
 		<form action="{$link->getPageLink('index')|escape:'html':'UTF-8'}" method="post">
 			<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-				<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Your e-mail' mod='blocknewsletter'}{/if}" />
+				<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{/if}" />
                 <button type="submit" name="submitNewsletter" class="btn btn-default button button-small">
                     <span>{l s='Ok' mod='blocknewsletter'}</span>
                 </button>
